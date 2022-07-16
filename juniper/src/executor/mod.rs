@@ -10,6 +10,7 @@ use std::{
 
 use fnv::FnvHashMap;
 use futures::Stream;
+use serde::Serialize;
 
 use crate::{
     ast::{
@@ -149,7 +150,7 @@ where
 ///     Ok(s)
 /// }
 /// ```
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Debug, PartialEq, Serialize)]
 pub struct FieldError<S = DefaultScalarValue> {
     message: String,
     extensions: Value<S>,

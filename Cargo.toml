@@ -13,6 +13,7 @@ members = [
     "juniper_rocket",
     "juniper_subscriptions",
     "juniper_graphql_ws",
+    "juniper_graphql_transport_ws",
     "juniper_warp",
     "juniper_actix",
     "tests/codegen",
